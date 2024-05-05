@@ -1,0 +1,76 @@
+//const body = document.createElement("body")
+const header = document.createElement("header");
+const navigation = document.createElement("nav");
+const ul = document.createElement("ul");
+const  list = document.createElement("li");
+const list1 = document.createElement("li");
+const list2 = document.createElement("li");
+const main =document.createElement("main");
+const  section = document.createElement("section");
+const h1 = document.createElement("h1");
+list.innerHTML ="deeparasi";
+list1.innerHTML ="puthur";
+list2.innerHTML ="26";
+h1.innerHTML =" Above deatile are created using dom " ;
+ul.append(list,list1,list2);
+navigation.appendChild(ul);
+header.appendChild(navigation);
+section.appendChild(h1);
+main.appendChild(section);
+document.body.append(header,main);
+
+
+
+
+Contents:
+What is DOM?
+createElement, 
+setAttribute
+getElementById, 
+querySelector vs querySelectorAll
+innerHTML vs innerText
+appendChild vs append
+
+DOM = > Document Object Model
+=> Used to create and manipulate html elements dynamically
+=> element = tag and content
+=> attribute = style,class,id,....
+
+Create Element:-
+step 1:- creating html element
+syntax:- 
+const/let variablename = document.createElement(html tag)
+step 2:- adding a content
+there are two types
+1.innerHTML
+2.innerText
+syntax:- 
+variablename.innerHTML = "content"
+step 3:- appending the element to the body of html document
+syntax:- 
+document.body.append(variablename)
+
+
+session task
+<header>
+<nav>
+<ul>
+<li>Name </li>
+<li>city </li>
+<li> age </li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h1> Above deatils are created using dom 
+</h1>
+</section>
+</main>
+
+
+attribute:- 
+setAttribute , getattribute
+
+classlist add
+classlist remove
